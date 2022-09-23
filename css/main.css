@@ -39,7 +39,7 @@ nav {
   nav {
     bottom: 0;
     padding: 0;
-    background: #151515;
+    background: #101010;
   }
 }
 nav.scrolled {
@@ -211,7 +211,6 @@ nav .container ul li a {
 }
 @media screen and (max-width: 525px) {
   nav .container ul {
-    position: relative;
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -263,10 +262,9 @@ nav .container ul li a {
     background-image: url("../img/icons/phone.png");
   }
   nav .container ul .translations {
-    position: absolute;
+    position: fixed;
     top: 0;
-    left: 50%;
-    transform: translate(-50%, -100%);
+    right: 0;
   }
   nav .container ul .translations li::before {
     display: none;
@@ -552,20 +550,24 @@ footer {
   padding: 5rem 0;
 }
 
-section {
+section,
+footer {
   overflow: hidden;
 }
-section h2 {
+section h2,
+footer h2 {
   text-align: center;
   position: relative;
   color: #fff;
 }
 @media screen and (min-width: 768px) {
-  section h2 {
+  section h2,
+footer h2 {
     font-size: 2rem;
   }
 }
-section h2::before {
+section h2::before,
+footer h2::before {
   content: attr(title_);
   position: absolute;
   left: 50%;

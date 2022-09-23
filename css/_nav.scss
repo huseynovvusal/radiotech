@@ -13,7 +13,7 @@ nav {
   @media screen and(max-width : 525px) {
     bottom: 0;
     padding: 0;
-    background: $dark;
+    background: $black;
   }
 
   &.scrolled {
@@ -274,7 +274,6 @@ nav {
       }
 
       @media screen and(max-width : 525px) {
-        position: relative;
         display: flex;
         justify-content: space-evenly;
         width: 100%;
@@ -331,10 +330,9 @@ nav {
         }
 
         .translations {
-          position: absolute;
+          position: fixed;
           top: 0;
-          left: 50%;
-          transform: translate(-50%, -100%);
+          right: 0;
 
           li::before {
             display: none;
