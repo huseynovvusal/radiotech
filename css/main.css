@@ -321,7 +321,8 @@ nav .container ul li a {
   background-image: url("../img/revan.jpeg");
 }
 #team .container .box picture.aytaj {
-  background-image: url("../img/deneme.jpg");
+  background-image: url("../img/aytaj.jpeg");
+  background-position: top;
 }
 #team .container .box picture.metin {
   background-image: url("../img/metin.jpeg");
