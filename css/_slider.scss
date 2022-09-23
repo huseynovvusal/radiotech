@@ -44,8 +44,8 @@
     position: absolute;
     bottom: 1rem;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: 990;
+    transform: translate(-50%, -50%);
+    z-index: 99;
 
     div {
       width: 8px;
@@ -59,6 +59,10 @@
       &.active {
         opacity: 1;
       }
+    }
+
+    @media screen and(max-width : 525px) {
+      bottom: 100%;
     }
   }
 
