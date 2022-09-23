@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700&display=swap");
+
+$black: #000;
+$dark: #101010;
+$white: #fff;
+$red: rgb(255, 0, 0);
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+h5 {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  color: $white;
+
+  .box {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media screen and(max-width:768px) {
+    flex-direction: column;
+
+    .box {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .phone {
+      margin-top: 0.5rem;
+
+      i {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
